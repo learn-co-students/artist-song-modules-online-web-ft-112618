@@ -1,8 +1,8 @@
 require 'pry'
 
 class Artist
-  attr_accessor :name
-  attr_reader :songs
+  attr_accessor :name #means we want this setter/getter pair to be accessible to other classes
+  attr_reader :songs #getter needs not be accessible to other classes
 
   @@artists = []
 
